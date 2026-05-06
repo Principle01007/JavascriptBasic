@@ -23,3 +23,4 @@ console.log(abecedario);
 let resultado = abecedario.splice(0,2);
 
 console.log(resultado)
+
