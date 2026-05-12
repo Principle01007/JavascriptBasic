@@ -6,8 +6,14 @@ let texto3 = `texto entre acentos graves ${plantillas}`;
 // console.log(texto3);
 
 let objeto = new String('primitivo');
-// console.log(objeto);
+console.log(objeto);
 
 // console.log('primitivo'.toUpperCase());
-console.log(typeof texto1);
-console.log(typeof objeto);
+// Coercion
+// console.log(typeof texto1);
+// console.log(typeof objeto);
+
+// const nombre = 'Juan';
+// const saludo = 'Buen Dia';
+// let plantilla = `Hola ${saludo} ${nombre}`;
+// console.log(plantilla);
