@@ -13,4 +13,11 @@ while (numero < 30) {
     numero = lista.shift();
     console.log(numero);
 }
+console.log('-------');
 console.log(lista);
+
+let numero = 0;
+while (numero < 100) {
+    resultado = numero ** 2;
+    
+}
