@@ -8,7 +8,35 @@
 // }
 
 // saludar("Maria", mostrarEnMayusculas);
-function Username(usuario, callback){
+// function Username(usuario, callback){
+//     switch(usuario) {
+//         case "Gabriel":
+//             console.log(usuario + " Bienvenido ahora ingresa tu contraseña");
+//             callback(usuario, "1234");
+//             break;
+//         case "Oscar":
+//             console.log(usuario + " Bienvenido ahora ingresa tu contraseña");
+//             callback(usuario, "123");
+//             break;
+//         default:
+//             console.log("No existe ese usuario, registrate");
+//     }
+// }
+
+// function Password(usuario, contraseña){
+//     if (usuario === "Oscar" && contraseña === "123"){
+//         console.log("Ingreso exitoso, buen dia " + usuario);
+//     } else if(usuario === "Gabriel" && contraseña === "1234"){
+//         console.log("Ingreso exitoso, buen dia " + usuario);
+//     } else {
+//         console.log("Contraseña incorrecta, intentalo de nuevo");
+//     }
+// }
+
+// Username("Oscar",Password);
+
+
+const Username = (usuario, callback) => {
     switch(usuario) {
         case "Gabriel":
             console.log(usuario + " Bienvenido ahora ingresa tu contraseña");
@@ -16,15 +44,17 @@ function Username(usuario, callback){
             break;
         case "Oscar":
             console.log(usuario + " Bienvenido ahora ingresa tu contraseña");
-            callback(usuario, "123");
+            callback(usuario, "");
             break;
         default:
             console.log("No existe ese usuario, registrate");
     }
 }
 
-function Password(usuario, contraseña){
-    if (usuario === "Oscar" && contraseña === "123"){
+const Password = (usuario, contraseña) =>{
+    if (usuario ==="" || contraseña === ""){
+        console.log("Contraseña o usuario no puestos, porfavor inserte completo");
+    }else if (usuario === "Oscar" && contraseña === "123"){
         console.log("Ingreso exitoso, buen dia " + usuario);
     } else if(usuario === "Gabriel" && contraseña === "1234"){
         console.log("Ingreso exitoso, buen dia " + usuario);
