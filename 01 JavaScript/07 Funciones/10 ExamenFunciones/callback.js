@@ -44,7 +44,7 @@ const Username = (usuario, callback) => {
             break;
         case "Oscar":
             console.log(usuario + " Bienvenido ahora ingresa tu contraseña");
-            callback(usuario, "");
+            callback(usuario, "123");
             break;
         default:
             console.log("No existe ese usuario, registrate");
